@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=0"
+        />
+
+        <!-- SEO 시작 -->
+        <link href="파비콘 경로 입력" rel="icon" />
+        <link rel="canonical" href="홈페이지 주소 입력" />
+        <meta name="robots" content="index,follow" />
+        <meta name="subject" content="홈페이지 주제 입력" />
+        <meta name="title" content="홈페이지 이름 입력" />
+        <meta name="author" content="문서 작성자 입력" />
+        <meta name="description" content="소개글 입력" />
+        <meta name="keywords" content="키워드 입력" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:rich_attachment" content="true" />
+        <meta property="og:site_name" content="홈페이지 이름 입력" />
+        <meta property="og:title" content="홈페이지 이름 입력" />
+        <meta property="og:description" content="SNS 소개글 입력" />
+        <meta property="og:image" content="SNS 썸네일 경로" />
+        <meta property="og:url" content="홈페이지 주소 입력" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="홈페이지 이름 입력" />
+        <meta name="twitter:description" content="트위터 소개글 입력" />
+        <meta name="twitter:image" content="트위터 썸네일 경로" />
+
+        <meta itemprop="name" content="홈페이지 제목 입력" />
+        <meta itemprop="description" content="소개글 입력" />
+        <meta itemprop="image" content="홈페이지 대표 이미지" />
+        <!-- SEO 끝 -->
+
+        <title>메인 페이지</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" type="text/css" href="/css/common.css" />
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/src/output.css" />
+    </head>
+
+    <body>
+        <div id="wrap">
+            <header
+                id="header"
+                class="border-b-black-100 group group/header sticky top-0 z-500 w-full bg-white"
+            ></header>
+
+            <!-- 내용 -->
+            <main>
+                <!--  메인 배너  -->
+                <section class="w-full">
+                    <!-- 배너 슬라이더 박스   -->
+                    <div class="swiper swiper-main-banner relative w-full overflow-hidden">
+                        <div class="swiper-wrapper">
+                            <!--   각각의 슬라이더   -->
+                            <div class="swiper-slide w-full">
+                                <a href="#banner01">
+                                    <img
+                                        class="hidden h-auto w-full object-cover sm:block"
+                                        src="/assets/images/banner/banner_01.png"
+                                        alt="배너 02 PC"
+                                    />
+                                    <img
+                                        class="h-auto w-full object-cover sm:hidden"
+                                        src="/assets/images/banner/banner_05.png"
+                                        alt="배너 02 모바일"
+                                    />
+                                </a>
+                            </div>
+                            <div class="swiper-slide w-full">
+                                <a href="#banner02">
+                                    <img
+                                        class="hidden h-auto w-full object-cover sm:block"
+                                        src="/assets/images/banner/banner_02.png"
+                                        alt="배너 02 PC"
+                                    />
+                                    <img
+                                        class="h-auto w-full object-cover sm:hidden"
+                                        src="/assets/images/banner/banner_06.png"
+                                        alt="배너 02 모바일"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+
+                        <div
+                            class="absolute bottom-10 left-1/2 z-20 flex w-full max-w-240 -translate-x-1/2 justify-between px-4 md:bottom-20"
+                        >
+                            <!-- 페이지네이션 -->
+
+                            <div
+                                class="rounded-3xl bg-white/60 px-4 py-1.5 text-center text-sm font-medium"
+                            >
+                                <div class="main-pagination"></div>
+                            </div>
+
+                            <!-- 이전 다음 버튼 -->
+                            <div class="flex items-center gap-6">
+                                <div class="btn-prev">
+                                    <button type="button" aria-label="이전 버튼">
+                                        <i data-lucide="chevron-left"></i>
+                                    </button>
+                                </div>
+
+                                <div class="btn-next">
+                                    <button type="button" aria-label="다음 버튼">
+                                        <i data-lucide="chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 바로가기 버튼   -->
+                <div class="relative z-20 mt-0 w-full md:-top-13">
+                    <div
+                        class="xl:*:vertical-divider md:shadow-box mx-auto grid grid-cols-2 items-center justify-items-center gap-y-6 border-y border-orange-500 bg-white py-6 md:flex md:max-w-6xl md:justify-around md:border-y md:py-6 lg:rounded-full lg:border"
+                    >
+                        <a
+                            href="#library"
+                            class="flex-center relative flex-col gap-2 font-semibold lg:flex-row"
+                        >
+                            <div class="circle-frame -top-2 left-6 lg:-left-4"></div>
+                            <img
+                                src="/assets/images/icon/icon_book.svg"
+                                alt="큰글자도서 라이브러리 바로가기"
+                            />
+                            <span>큰글자도서 라이브러리</span>
+                        </a>
+                        <a
+                            href="#book-list"
+                            class="flex-center relative flex-col gap-2 font-semibold lg:flex-row"
+                        >
+                            <div class="circle-frame -top-2 right-12 lg:-left-4"></div>
+                            <img
+                                src="/assets/images/icon/icon_books.svg"
+                                alt="더책 도서목록 바로가기"
+                            />
+                            <span>더책 도서목록</span>
+                        </a>
+                        <a
+                            href="#poem-list"
+                            class="flex-center relative flex-col gap-2 font-semibold lg:flex-row"
+                        >
+                            <div class="circle-frame -top-2 left-2 lg:-left-4"></div>
+                            <img
+                                src="/assets/images/icon/icon_note.svg"
+                                alt="시요일 시집 바로가기"
+                            />
+                            <span>시요일 시집 목록</span>
+                        </a>
+                        <a
+                            href="#guide"
+                            class="flex-center relative flex-col gap-2 font-semibold lg:flex-row"
+                        >
+                            <div class="circle-frame -top-2 right-14 lg:-left-4"></div>
+                            <img
+                                src="/assets/images/icon/icon_desktop.svg"
+                                alt="견적 및 주문 안내바로가기"
+                            />
+                            <span>견적 및 주문 안내</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 참여 출판사  -->
+                <section class="flex-center mx-auto w-full pb-20">
+                    <div class="flex-center w-full flex-col gap-10">
+                        <h2 class="deco-title text-2xl font-bold">참여 출판사</h2>
+
+                        <!-- 참여 출판사  swiper  -->
+                        <div class="mx-auto w-[calc(100%-32px)] max-w-300">
+                            <!-- Swiper -->
+                            <div class="relative w-full">
+                                <div class="px-10">
+                                    <div class="swiper publishing-co w-full">
+                                        <div class="swiper-wrapper"></div>
+                                    </div>
+
+                                    <!-- 참여 출판사 네비 버튼 -->
+                                    <button
+                                        type="button"
+                                        class="publishing-btn-prev border-shadow-200 absolute top-1/2 left-0 z-20 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-md"
+                                    >
+                                        <i data-lucide="chevron-left" class="stroke-orange-500"></i>
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="publishing-btn-next border-shadow-200 absolute top-1/2 right-0 z-20 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-md"
+                                    >
+                                        <i
+                                            data-lucide="chevron-right"
+                                            class="stroke-orange-500"
+                                        ></i>
+                                    </button>
+                                </div>
+                                <!-- 참여 출판사 페이지네이션 -->
+                                <div
+                                    class="bg-black-100 absolute bottom-0 left-1/2 z-20 -translate-x-1/2 rounded-3xl px-4 py-1.5 text-center text-sm font-medium"
+                                >
+                                    <div class="publishing-pc-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer id="footer"></footer>
+        </div>
+
+        <div id="pop_up"></div>
+
+        <!-- 헤더  -->
+        <script src="/js/header.js"></script>
+
+        <!-- JS (lucide, i18next, swiper, gsap) -->
+        <script src="/js/jquery.js"></script>
+        <script src="https://unpkg.com/i18next@23.10.1/i18next.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+        <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.min.js"></script>
+        <script src="https://unpkg.com/jquery-i18next/dist/umd/jquery-i18next.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <script src="/js/script.js"></script>
+        <!-- Swiper 초기화-->
+        <script src="/js/swiper.js"></script>
+        <script src="/js/publishingSwiper.js"></script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+.menu-list {
+    height: 100%;
+    position: relative;
+
+    a {
+        padding: 1rem 0;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 3px;
+        background-color: var(--color-orange-500);
+        transition: width 0.2s ease-in-out;
+    }
+    &:hover > .sub-menu {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+@layer components {
+    .sub-menu {
+        position: absolute;
+        z-index: 20;
+
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: max-content;
+        min-width: 100%;
+        padding-top: 2rem;
+        white-space: nowrap;
+        text-align: center;
+
+        transition: width 0.2s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+
+        li {
+            padding-bottom: 0.5rem;
+        }
+    }
+}

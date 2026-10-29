@@ -1,0 +1,183 @@
+<div class="full-display h-15 w-[calc(100%-32px)] justify-between lg:h-25">
+    <!--   로고    -->
+    <h1>
+        <a href="/" class="h-auto w-22 shrink-0 lg:w-32">
+            <img
+                src="/assets/images/logo/logo_c.png"
+                class="object-contain"
+                alt="콘텐츠 라이브러리 로고"
+            />
+        </a>
+    </h1>
+
+    <!--   PC 네비게이션    -->
+    <nav class="hidden font-medium lg:block">
+        <ul class="flex list-none gap-15">
+            <li class="menu-list">
+                <a href="#1">콘텐츠 라이브러리</a>
+                <ul class="sub-menu">
+                    <li><a href="#">콘텐츠 라이브러리 안내</a></li>
+                </ul>
+            </li>
+            <li class="menu-list">
+                <a href="#2">큰글자도서 라이브러리</a>
+                <ul class="sub-menu">
+                    <li><a href="#">큰글자도서 라이브러리 안내</a></li>
+                    <li><a href="#">큰글자도서 라이브러리 프로모션</a></li>
+                </ul>
+            </li>
+            <li class="menu-list">
+                <a href="#3">더책</a>
+                <ul class="sub-menu">
+                    <li><a href="#">더책 안내</a></li>
+                    <li><a href="#">더책 프로모션</a></li>
+                </ul>
+            </li>
+            <li class="menu-list">
+                <a href="#4">시요일</a>
+                <ul class="sub-menu">
+                    <li><a href="#">시요일 안내</a></li>
+                    <li><a href="#">시요일 프로모션</a></li>
+                </ul>
+            </li>
+            <li class="menu-list">
+                <a href="#5">견적 및 주문</a>
+                <ul class="sub-menu">
+                    <li><a href="#">견적 및 주문 문의</a></li>
+                </ul>
+            </li>
+            <li class="menu-list">
+                <a href="#6">공지사항</a>
+                <ul class="sub-menu">
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!--   모바일 햄버거   -->
+    <button
+        type="button"
+        class="flex-center h-7 w-7 lg:hidden"
+        aria-label="메뉴 열기"
+        id="menu-btn"
+    >
+        <i data-lucide="menu" class="shrink-0"></i>
+    </button>
+</div>
+
+<!-- pc 서브 배경판  -->
+<div
+    class="border-t-black-500 invisible absolute top-full left-0 h-40 w-full bg-white opacity-0 transition-opacity group-has-[.menu-list:hover]/header:visible group-has-[.menu-list:hover]/header:opacity-100"
+></div>
+
+<!-- 모바일 메뉴  -->
+<div id="mobile-menu" class="hidden w-full bg-white px-4 lg:hidden">
+    <ul class="divide-black-100 flex w-full flex-col divide-y">
+        <li class="mobile-menu-item">
+            <button
+                type="button"
+                class="mobile-toggle text-black-500 flex w-full items-center justify-between py-4 text-left text-xl font-medium"
+            >
+                <span>콘텐츠 라이브러리</span>
+                <i data-lucide="chevron-down" class="h-6 w-6 transition-transform duration-200"></i>
+            </button>
+            <ul
+                class="mobile-sub-menu text-black-500 hidden flex-col gap-3 pb-4 pl-2 text-sm font-medium"
+            >
+                <li>
+                    <a href="#" class="block py-1">콘텐츠 라이브러리 안내</a>
+                </li>
+            </ul>
+        </li>
+        <li class="mobile-menu-item">
+            <button
+                type="button"
+                class="mobile-toggle text-black-500 flex w-full items-center justify-between py-4 text-left text-xl font-medium"
+            >
+                <span>큰글자도서 라이브러리</span>
+                <i data-lucide="chevron-down" class="h-6 w-6 transition-transform duration-200"></i>
+            </button>
+            <ul
+                class="mobile-sub-menu text-black-500 hidden flex-col gap-3 pb-4 pl-2 text-sm font-medium"
+            >
+                <li>
+                    <a href="#" class="block py-1">큰글자도서 라이브러리 안내</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-1">큰글자도서 라이브러리 프로모션</a>
+                </li>
+            </ul>
+        </li>
+        <li class="mobile-menu-item">
+            <button
+                type="button"
+                class="mobile-toggle text-black-500 flex w-full items-center justify-between py-4 text-left text-xl font-medium"
+            >
+                <span>더책</span>
+                <i data-lucide="chevron-down" class="h-6 w-6 transition-transform duration-200"></i>
+            </button>
+            <ul
+                class="mobile-sub-menu text-black-500 hidden flex-col gap-3 pb-4 pl-2 text-sm font-medium"
+            >
+                <li>
+                    <a href="#" class="block py-1">더책 안내</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-1">더책 프로모션</a>
+                </li>
+            </ul>
+        </li>
+        <li class="mobile-menu-item">
+            <button
+                type="button"
+                class="mobile-toggle text-black-500 flex w-full items-center justify-between py-4 text-left text-xl font-medium"
+            >
+                <span>시요일</span>
+                <i data-lucide="chevron-down" class="h-6 w-6 transition-transform duration-200"></i>
+            </button>
+            <ul
+                class="mobile-sub-menu text-black-500 hidden flex-col gap-3 pb-4 pl-2 text-sm font-medium"
+            >
+                <li>
+                    <a href="#" class="block py-1">시요일 안내</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-1">시요일 프로모션</a>
+                </li>
+            </ul>
+        </li>
+        <li class="mobile-menu-item">
+            <button
+                type="button"
+                class="mobile-toggle text-black-500 flex w-full items-center justify-between py-4 text-left text-xl font-medium"
+            >
+                <span>견적 및 주문</span>
+                <i data-lucide="chevron-down" class="h-6 w-6 transition-transform duration-200"></i>
+            </button>
+            <ul
+                class="mobile-sub-menu text-black-500 hidden flex-col gap-3 pb-4 pl-2 text-sm font-medium"
+            >
+                <li>
+                    <a href="#" class="block py-1">견적 및 주문</a>
+                </li>
+            </ul>
+        </li>
+        <li class="mobile-menu-item">
+            <button
+                type="button"
+                class="mobile-toggle text-black-500 flex w-full items-center justify-between py-4 text-left text-xl font-medium"
+            >
+                <span>공지사항</span>
+                <i data-lucide="chevron-down" class="h-6 w-6 transition-transform duration-200"></i>
+            </button>
+            <ul
+                class="mobile-sub-menu text-black-500 hidden flex-col gap-3 pb-4 pl-2 text-sm font-medium"
+            >
+                <li>
+                    <a href="#" class="block py-1">공지사항</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
